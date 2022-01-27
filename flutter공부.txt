@@ -1,0 +1,89 @@
+👀글자위젯
+ Text()
+======================================================
+👀이미지위젯
+Image.asset('경로~')
+- 이미지 보관용 assets 폴더르르 만들고 이미지를 넣으면 된다
+- 이미지를 넣을떈 Image.asset('경로')
+- 이미지쓰겟다고 등록도 해야됨
+- pubspec.yaml파일에 이미지 등록(외부패키지 라이브러리 )
+  flutter: assets: 
+    - assets/  ==> 에셋이라는 파일안에 잇는걸 다 가져다 쓸것이다
+===================================================
+👀아이콘 위젯
+Icon(Icons.star)
+================================================
+👀박스위젯
+Container(width: 50, height: 50, color: Colors.blue)
+위젯( child : 위젯() )
+
+
+
+===========레이아웃 =====================
+👀MaterialApp()   =>  구글에서 제공하는 UI를 쓸수 잇음
+👀Cupertino 어쩌구()  => 아이폰에서 제공하는 UI
+커스터마이징 하려고 하는데요?  MaterialApp을 쓰셈 나중에 구글물 빼는 작업하셈
+👀home: Scafoold(   => 앱을 상중하로 나눠주는 Scaffold()위젯
+appBar: AppBar(),
+body : Container(), 
+bottomNavigationBar: BottomAppBar(),
+)
+
+========
+body : Row(   => 오른쪽으로 flex  반대는 세로로 배치 Column(children:[])
+	childeren: [
+	Icon(Icons.star),
+	Icon(Icons.star),
+	Icon(Icons.star),
+],
+) 
+
+
+Row, Column 요소들을 정리하려면
+
+👀mainAxisAlignment: MainAxisAlignment.spaceEvenly  =>   떨어뜨리는 정렬  => display flex 와 유사
+👀CrossAxisAlignment: CrossAxisAlignment : center,   세로축 정렬 
+
+===========Flutter 박스디자인 하는법 =====================
+
+Container 안에 Row 하면 박스디자인 할수잇을듯
+Container => SizedBox(width height child만 필요하는 박스)
+
+마진 주는법 : Container(
+margin: EdgeInset.all(20)
+패딩 : padding: Edgeinset.all
+
+만약 마진에 왼쪽 탑 오른쪽 바텀을 주고싶다
+margin: EdgeInsets.fromLTRB(left,top,right,bottom)
+
+
+나머지 찌끄레기 박스 스타일들은 decoration: 안에 넣어야함
+decoration: BoxDecoration(
+border: Border.all(color: Colors.black)
+)
+==================Typography/ Button=============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
